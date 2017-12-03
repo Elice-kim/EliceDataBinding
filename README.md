@@ -1,3 +1,3 @@
 # EliceDataBinding
 DataBinding : RecyclerView Movie Sample
-\nDescription for project : https://goo.gl/JM7jGz
+<br />Description for project : https://goo.gl/JM7jGz
