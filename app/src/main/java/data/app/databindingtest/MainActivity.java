@@ -1,11 +1,9 @@
 package data.app.databindingtest;
 
-import android.databinding.BindingAdapter;
 import android.databinding.DataBindingUtil;
 import android.databinding.ObservableArrayList;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
 
 import data.app.databindingtest.databinding.ActivityMainBinding;
 
@@ -32,13 +30,5 @@ public class MainActivity extends AppCompatActivity {
         movieList.add(new Movie("Inside Out", "Animation, Kids & Family", "2015"));
         movieList.add(new Movie("Star Wars: Episode VII - The Force Awakens", "Action", "2015"));
         movieList.add(new Movie("Shaun the Sheep", "Animation", "2015"));
-    }
-
-    @BindingAdapter("bind:item")
-    public static void bindItem(RecyclerView recyclerView, ObservableArrayList<Movie> movie) {
-        MoviesAdapter adapter = (MoviesAdapter) recyclerView.getAdapter();
-        if (adapter != null) {
-            adapter.setItem(movie);
-        }
     }
 }
